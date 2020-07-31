@@ -1,0 +1,15 @@
+def first(a,b,c):
+    return (a+b)%c
+def second(a,b,c):
+    return ((a%c)+(b%c))%c
+def third(a,b,c):
+    return (a*b)%c
+def fourth(a,b,c):
+    return ((a%c)*(b%c))%c
+
+A,B,C = map(int,input().split())
+
+print(first(A,B,C))
+print(second(A,B,C))
+print(third(A,B,C))
+print(fourth(A,B,C))
